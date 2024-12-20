@@ -22,7 +22,8 @@ services:
 
 networks:
   sampleapp:
-    driver: bridge
+    external: false
+    # driver: bridge
       
 
   # db:
