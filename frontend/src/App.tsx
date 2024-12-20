@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/")
+    fetch("http://backend:3001")
       .then((res) => res.text())
       .then((data) => setData(data))
       .catch((err) => console.error(err));
