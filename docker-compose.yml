@@ -10,7 +10,7 @@ services:
     #   - DB_PASSWORD=${MYSQL_PASSWORD}
     #   - DB_NAME=${MYSQL_DATABASE}
     networks:
-      - sampleapp
+      - app-network
 
   frontend:
     build:
@@ -18,12 +18,11 @@ services:
     ports:
       - "3000:80"
     networks:
-      - sampleapp
+      - app-network
 
 networks:
-  sampleapp:
-    external: false
-    # driver: bridge
+  app-network:
+    driver: bridge
       
 
   # db:
