@@ -2,7 +2,7 @@
 FROM node:18 AS build_react
 WORKDIR /app
 COPY ./client .
-RUN npm run install
+RUN npm install
 RUN npm run build
 
 
