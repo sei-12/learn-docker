@@ -22,7 +22,7 @@ services:
 
 networks:
   sampleapp:
-    external: false
+    driver: bridge
       
 
   # db:
