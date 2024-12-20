@@ -1,7 +1,7 @@
 FROM node:18
 WORKDIR /app
-COPY package.json ./
+COPY . .
 RUN npm install
-COPY ./src ./src
+RUN npm run build
 EXPOSE 3001
-CMD ["npm", "start"]
+CMD ["node", "./dist/main.js"]
