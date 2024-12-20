@@ -1,5 +1,5 @@
 # 1. Build Stage
-FROM node:18 as build
+FROM node:18 AS build
 
 # 作業ディレクトリの設定
 WORKDIR /app
